@@ -1,0 +1,4 @@
+
+interface Grensesnitt {
+	String hvorErJeg();
+}
