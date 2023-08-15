@@ -1,0 +1,73 @@
+----------------------------------------------
+Final word of the dictionary: familiefellesskaps
+First word of the dictionary: elektrolytt
+The depth of the tree: 29
+The average depth of all the nodes: 15.403742378582942
+Depth 0: 1 node(s)
+Depth 1: 2 node(s)
+Depth 2: 4 node(s)
+Depth 3: 8 node(s)
+Depth 4: 16 node(s)
+Depth 5: 32 node(s)
+Depth 6: 62 node(s)
+Depth 7: 117 node(s)
+Depth 8: 201 node(s)
+Depth 9: 337 node(s)
+Depth 10: 532 node(s)
+Depth 11: 786 node(s)
+Depth 12: 1058 node(s)
+Depth 13: 1291 node(s)
+Depth 14: 1424 node(s)
+Depth 15: 1487 node(s)
+Depth 16: 1483 node(s)
+Depth 17: 1338 node(s)
+Depth 18: 1189 node(s)
+Depth 19: 942 node(s)
+Depth 20: 665 node(s)
+Depth 21: 482 node(s)
+Depth 22: 333 node(s)
+Depth 23: 219 node(s)
+Depth 24: 126 node(s)
+Depth 25: 71 node(s)
+Depth 26: 43 node(s)
+Depth 27: 16 node(s)
+Depth 28: 4 node(s)
+----------------------------------------------
+Enter a word for lookup (type q to quit): etterfølger
+"etterfølger" is found in the dictionary and spelled correctly.
+
+Enter a word for lookup (type q to quit): eterfølger
+"eterfølger" is not found in the dictionary.
+Similar words to "eterfølger" is generated: 
+--> etterfølger
+--> etterfølger
+The number of lookups that gave a positive answer: 2
+Time used to generate and look for similar words: 3 ms
+ 
+Enter a word for lookup (type q to quit): etterfolger
+"etterfolger" is not found in the dictionary.
+Similar words to "etterfolger" is generated: 
+--> etterfølger
+The number of lookups that gave a positive answer: 1
+Time used to generate and look for similar words: 2 ms
+ 
+Enter a word for lookup (type q to quit): etterfølgern
+"etterfølgern" is not found in the dictionary.
+Similar words to "etterfølgern" is generated: 
+--> etterfølgere
+--> etterfølgers
+--> etterfølgeren
+--> etterfølgerne
+--> etterfølger
+--> etterfølger
+The number of lookups that gave a positive answer: 6
+Time used to generate and look for similar words: 2 ms
+ 
+Enter a word for lookup (type q to quit): tterfølger
+"tterfølger" is not found in the dictionary.
+Similar words to "tterfølger" is generated: 
+--> etterfølger
+The number of lookups that gave a positive answer: 1
+Time used to generate and look for similar words: 1 ms
+ 
+Enter a word for lookup (type q to quit): q
