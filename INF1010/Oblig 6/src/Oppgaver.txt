@@ -1,0 +1,11 @@
+1.	Kan gå i parallell: sortering og fletting av lokale lister.
+	Kan ikke gå i parallell: lesing og skriving av fil, en og en tråd strømmer til monitoren.
+	I koden blir trådene initiert serielt i en for-løkke.
+
+2. 	Koden bruker omtrent ca. 29 ms på sortering/fletting/strømming til minitor.
+	Dette når vi behandler names.txt-filen med 128 tråder.
+	For 64 tråder - ca. 25 ms
+	For 32 tråder - ca. 24 ms
+	For 16 tråder - ca. 30 ms
+	For 4 tråder -  ca. 78 ms
+	--> Optimalt for denne problemstørrelsen er mellom 32 tråder og 64 tråder (grovt sett)
