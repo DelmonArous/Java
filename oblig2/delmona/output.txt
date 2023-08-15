@@ -1,0 +1,497 @@
+Execution of project buildhouse1.txt:
+
+---- Information on all tasks ----
+Task 1, Build-walls
+	Time: 4
+	Staff: 2
+	This task is critical
+	Latest starting time: 4
+Dependency on this task: 
+	Task 2, Build-roofs
+	Task 3, Put-on-wallpapers
+ 
+Task 2, Build-roofs
+	Time: 6
+	Staff: 4
+	This task is critical
+	Latest starting time: 8
+Dependency on this task: 
+	Task 3, Put-on-wallpapers
+	Task 4, Put-on-tiles
+	Task 7, Put-carpet-floor
+ 
+Task 3, Put-on-wallpapers
+	Time: 1
+	Staff: 2
+	Slack: 3
+	Latest starting time: 17
+Dependency on this task: 
+	Task 8, Move-in
+ 
+Task 4, Put-on-tiles
+	Time: 1
+	Staff: 3
+	Slack: 7
+	Latest starting time: 21
+There are no dependency on this task
+ 
+Task 5, Build-foundation
+	Time: 4
+	Staff: 2
+	This task is critical
+	Latest starting time: 0
+Dependency on this task: 
+	Task 1, Build-walls
+	Task 6, Make-floor
+ 
+Task 6, Make-floor
+	Time: 2
+	Staff: 2
+	Slack: 8
+	Latest starting time: 12
+Dependency on this task: 
+	Task 7, Put-carpet-floor
+ 
+Task 7, Put-carpet-floor
+	Time: 4
+	Staff: 2
+	This task is critical
+	Latest starting time: 14
+Dependency on this task: 
+	Task 8, Move-in
+ 
+Task 8, Move-in
+	Time: 4
+	Staff: 4
+	This task is critical
+	Latest starting time: 18
+There are no dependency on this task
+ 
+---- Project work log ----
+Time: 0
+	Starting: 5
+	Current Staff: 2
+Time: 4
+	Starting: 1
+	Finished: 5
+	Starting: 6
+	Current Staff: 4
+Time: 6
+	Finished: 6
+	Current Staff: 2
+Time: 8
+	Finished: 1
+	Starting: 2
+	Current Staff: 4
+Time: 14
+	Finished: 2
+	Starting: 3
+	Starting: 4
+	Starting: 7
+	Current Staff: 7
+Time: 15
+	Finished: 3
+	Finished: 4
+	Current Staff: 2
+Time: 18
+	Finished: 7
+	Starting: 8
+	Current Staff: 4
+Time: 22
+	Finished: 8
+	Current Staff: 0
+
+**** Shortest possible project execution is 22 ****
+
+--------------------------------------------------------------------
+
+Execution of project buildhouse2.txt:
+
+Circular dependency in the project, cycle: 1 --> 6 --> 3 --> 2 --> 1
+Terminating the project...
+
+--------------------------------------------------------------------
+
+Execution of project builrail.txt:
+
+---- Information on all tasks ----
+Task 1, Install-pavement
+	Time: 20
+	Staff: 10
+	Slack: 12
+	Latest starting time: 198
+There are no dependency on this task
+ 
+Task 2, Install-railing
+	Time: 7
+	Staff: 10
+	Slack: 206
+	Latest starting time: 211
+There are no dependency on this task
+ 
+Task 3, Install-ticketmachine
+	Time: 1
+	Staff: 10
+	Slack: 154
+	Latest starting time: 217
+There are no dependency on this task
+ 
+Task 4, Paint-tower-1-with-arch
+	Time: 15
+	Staff: 6
+	Slack: 84
+	Latest starting time: 203
+There are no dependency on this task
+ 
+Task 5, Paint-tower-2
+	Time: 12
+	Staff: 6
+	Slack: 82
+	Latest starting time: 206
+There are no dependency on this task
+ 
+Task 6, Paint-trusses
+	Time: 27
+	Staff: 6
+	Slack: 5
+	Latest starting time: 191
+There are no dependency on this task
+ 
+Task 7, Paint-cables-and-rods
+	Time: 18
+	Staff: 6
+	Slack: 14
+	Latest starting time: 200
+There are no dependency on this task
+ 
+Task 8, Put-lane-tunnel-and-intersection
+	Time: 12
+	Staff: 7
+	Slack: 143
+	Latest starting time: 194
+Dependency on this task: 
+	Task 3, Install-ticketmachine
+	Task 31, Polish-lane-on-arch
+ 
+Task 9, Setup-barrack
+	Time: 3
+	Staff: 10
+	This task is critical
+	Latest starting time: 0
+Dependency on this task: 
+	Task 10, Prepare-storage
+	Task 11, Rig-ramspace-reinforcing
+	Task 12, Build-tunnel
+	Task 14, Build-intersection
+	Task 16, Build-towerfoundation-1
+	Task 17, Build-towerfoundation-2
+ 
+Task 10, Prepare-storage
+	Time: 2
+	Staff: 4
+	Slack: 206
+	Latest starting time: 209
+Dependency on this task: 
+	Task 2, Install-railing
+ 
+Task 11, Rig-ramspace-reinforcing
+	Time: 1
+	Staff: 4
+	Slack: 5
+	Latest starting time: 8
+Dependency on this task: 
+	Task 18, Make-armouring-tower-1
+	Task 19, Make-armouring-tower-2
+	Task 20, Make-armouring-arch
+ 
+Task 12, Build-tunnel
+	Time: 30
+	Staff: 12
+	Slack: 143
+	Latest starting time: 146
+Dependency on this task: 
+	Task 13, Clean-tunnel
+ 
+Task 13, Clean-tunnel
+	Time: 18
+	Staff: 12
+	Slack: 143
+	Latest starting time: 176
+Dependency on this task: 
+	Task 8, Put-lane-tunnel-and-intersection
+ 
+Task 14, Build-intersection
+	Time: 25
+	Staff: 12
+	Slack: 146
+	Latest starting time: 149
+Dependency on this task: 
+	Task 15, Clean-intersection
+ 
+Task 15, Clean-intersection
+	Time: 20
+	Staff: 12
+	Slack: 146
+	Latest starting time: 174
+Dependency on this task: 
+	Task 8, Put-lane-tunnel-and-intersection
+ 
+Task 16, Build-towerfoundation-1
+	Time: 35
+	Staff: 12
+	Slack: 11
+	Latest starting time: 14
+Dependency on this task: 
+	Task 21, Encase-and-armour-tower-1
+ 
+Task 17, Build-towerfoundation-2
+	Time: 45
+	Staff: 12
+	This task is critical
+	Latest starting time: 3
+Dependency on this task: 
+	Task 22, Encase-and-armour-tower-2
+ 
+Task 18, Make-armouring-tower-1
+	Time: 40
+	Staff: 4
+	Slack: 5
+	Latest starting time: 9
+Dependency on this task: 
+	Task 21, Encase-and-armour-tower-1
+ 
+Task 19, Make-armouring-tower-2
+	Time: 25
+	Staff: 4
+	Slack: 19
+	Latest starting time: 23
+Dependency on this task: 
+	Task 22, Encase-and-armour-tower-2
+ 
+Task 20, Make-armouring-arch
+	Time: 12
+	Staff: 4
+	Slack: 140
+	Latest starting time: 144
+Dependency on this task: 
+	Task 23, Encase-and-armour-arch
+ 
+Task 21, Encase-and-armour-tower-1
+	Time: 15
+	Staff: 5
+	Slack: 5
+	Latest starting time: 49
+Dependency on this task: 
+	Task 24, Cast-tower-1
+ 
+Task 22, Encase-and-armour-tower-2
+	Time: 16
+	Staff: 5
+	This task is critical
+	Latest starting time: 48
+Dependency on this task: 
+	Task 25, Cast-tower-2
+ 
+Task 23, Encase-and-armour-arch
+	Time: 30
+	Staff: 5
+	Slack: 140
+	Latest starting time: 156
+Dependency on this task: 
+	Task 26, Cast-arch
+ 
+Task 24, Cast-tower-1
+	Time: 60
+	Staff: 7
+	Slack: 5
+	Latest starting time: 64
+Dependency on this task: 
+	Task 4, Paint-tower-1-with-arch
+	Task 27, Stretch-two-maincables
+ 
+Task 25, Cast-tower-2
+	Time: 60
+	Staff: 7
+	This task is critical
+	Latest starting time: 64
+Dependency on this task: 
+	Task 5, Paint-tower-2
+	Task 27, Stretch-two-maincables
+ 
+Task 26, Cast-arch
+	Time: 20
+	Staff: 7
+	Slack: 140
+	Latest starting time: 186
+Dependency on this task: 
+	Task 31, Polish-lane-on-arch
+ 
+Task 27, Stretch-two-maincables
+	Time: 25
+	Staff: 10
+	This task is critical
+	Latest starting time: 124
+Dependency on this task: 
+	Task 28, Build-truss-1-with-rods
+	Task 29, Build-truss-2-with-rods
+ 
+Task 28, Build-truss-1-with-rods
+	Time: 30
+	Staff: 10
+	Slack: 7
+	Latest starting time: 156
+Dependency on this task: 
+	Task 1, Install-pavement
+	Task 6, Paint-trusses
+	Task 7, Paint-cables-and-rods
+	Task 30, Cast-lane-on-truss
+ 
+Task 29, Build-truss-2-with-rods
+	Time: 37
+	Staff: 10
+	This task is critical
+	Latest starting time: 149
+Dependency on this task: 
+	Task 1, Install-pavement
+	Task 6, Paint-trusses
+	Task 7, Paint-cables-and-rods
+	Task 30, Cast-lane-on-truss
+ 
+Task 30, Cast-lane-on-truss
+	Time: 20
+	Staff: 7
+	This task is critical
+	Latest starting time: 186
+Dependency on this task: 
+	Task 31, Polish-lane-on-arch
+ 
+Task 31, Polish-lane-on-arch
+	Time: 12
+	Staff: 7
+	This task is critical
+	Latest starting time: 206
+There are no dependency on this task
+ 
+---- Project work log ----
+Time: 0
+	Starting: 9
+	Current Staff: 10
+Time: 3
+	Finished: 9
+	Starting: 10
+	Starting: 11
+	Starting: 12
+	Starting: 14
+	Starting: 16
+	Starting: 17
+	Current Staff: 56
+Time: 4
+	Finished: 11
+	Starting: 18
+	Starting: 19
+	Starting: 20
+	Current Staff: 64
+Time: 5
+	Starting: 2
+	Finished: 10
+	Current Staff: 70
+Time: 12
+	Finished: 2
+	Current Staff: 60
+Time: 16
+	Finished: 20
+	Starting: 23
+	Current Staff: 61
+Time: 28
+	Finished: 14
+	Starting: 15
+	Current Staff: 61
+Time: 29
+	Finished: 19
+	Current Staff: 57
+Time: 33
+	Finished: 12
+	Starting: 13
+	Current Staff: 57
+Time: 38
+	Finished: 16
+	Current Staff: 45
+Time: 44
+	Finished: 18
+	Starting: 21
+	Current Staff: 46
+Time: 46
+	Finished: 23
+	Starting: 26
+	Current Staff: 48
+Time: 48
+	Finished: 15
+	Finished: 17
+	Starting: 22
+	Current Staff: 29
+Time: 51
+	Starting: 8
+	Finished: 13
+	Current Staff: 24
+Time: 59
+	Finished: 21
+	Starting: 24
+	Current Staff: 26
+Time: 63
+	Starting: 3
+	Finished: 8
+	Current Staff: 29
+Time: 64
+	Finished: 3
+	Finished: 22
+	Starting: 25
+	Current Staff: 21
+Time: 66
+	Finished: 26
+	Current Staff: 14
+Time: 119
+	Starting: 4
+	Finished: 24
+	Current Staff: 13
+Time: 124
+	Starting: 5
+	Finished: 25
+	Starting: 27
+	Current Staff: 22
+Time: 134
+	Finished: 4
+	Current Staff: 16
+Time: 136
+	Finished: 5
+	Current Staff: 10
+Time: 149
+	Finished: 27
+	Starting: 28
+	Starting: 29
+	Current Staff: 20
+Time: 179
+	Finished: 28
+	Current Staff: 10
+Time: 186
+	Starting: 1
+	Starting: 6
+	Starting: 7
+	Finished: 29
+	Starting: 30
+	Current Staff: 29
+Time: 204
+	Finished: 7
+	Current Staff: 23
+Time: 206
+	Finished: 1
+	Finished: 30
+	Starting: 31
+	Current Staff: 13
+Time: 213
+	Finished: 6
+	Current Staff: 7
+Time: 218
+	Finished: 31
+	Current Staff: 0
+
+**** Shortest possible project execution is 218 ****

@@ -1,0 +1,47 @@
+Text: cogwrgaccag
+
+Pattern: c_g
+Index: 0, pattern-match: cog
+Index: 8, pattern-match: cag
+------------------------------------------
+Text: cogwrgaccag
+
+Pattern: 
+Pattern is empty!
+Pattern not found in the text.
+------------------------------------------
+Text: cogwrgaccag
+
+Pattern: _ac
+Index: 5, pattern-match: gac
+------------------------------------------
+Text: cogwrgaccag
+
+Pattern: ga_
+Index: 5, pattern-match: gac
+------------------------------------------
+Text: cogwrgaccag
+
+Pattern: _a_
+Index: 5, pattern-match: gac
+Index: 8, pattern-match: cag
+------------------------------------------
+Text: cogwrgaccag
+
+Pattern: ___
+Index: 0, pattern-match: cog
+Index: 1, pattern-match: ogw
+Index: 2, pattern-match: gwr
+Index: 3, pattern-match: wrg
+Index: 4, pattern-match: rga
+Index: 5, pattern-match: gac
+Index: 6, pattern-match: acc
+Index: 7, pattern-match: cca
+Index: 8, pattern-match: cag
+------------------------------------------
+Text: 
+
+Pattern: c_g
+Pattern is larger than the text!
+Pattern not found in the text.
+------------------------------------------
